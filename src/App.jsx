@@ -63,6 +63,18 @@ function App() {
     localStorage.setItem("animals", JSON.stringify(fieldCopy));
   };
 
+  const stats = () => {
+    const fieldCopy = field.slice();
+    console.log(fieldCopy);
+    fieldCopy.forEach((element) => {
+      console.log(element);
+      if (element.animal === "cow") {
+        console.log(element.animal);
+      }
+    });
+  };
+  stats();
+
   return (
     <>
       <div className="field">
